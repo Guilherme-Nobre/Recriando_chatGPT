@@ -40,8 +40,8 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 **1. Clone o repositório**
 ```bash
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-cd seu-repositorio
+git clone https://github.com/Guilherme-Nobre/Recriando_chatGPT
+cd Recriando_chatGPT
 ```
 
 **2. Crie e ative um ambiente virtual (Recomendado)**
