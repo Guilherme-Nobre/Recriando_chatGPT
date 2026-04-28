@@ -86,7 +86,7 @@ def generate_text(request: PromptRequest, background_tasks: BackgroundTasks, db:
         # Busca as 3 memórias mais relevantes DO TENANT DO USUÁRIO usando distância L2 (<->)
         memorias_relevantes = db.query(Memory)\
             .filter(Memory.tenant_id == db_user.tenant_id)\
-            .order_by(Memory.embedding.l2_distance(query_vector))\
+            .order_by(Memory.embedding.cosine_distance(query_vector))\
             .limit(3).all()
         
         contexto_memoria = ""
